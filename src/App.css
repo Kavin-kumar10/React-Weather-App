@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Architects+Daughter&family=Bad+Script&family=Fredericka+the+Great&family=Gochi+Hand&family=Indie+Flower&family=Marck+Script&family=Oleo+Script&family=Pacifico&family=Rock+Salt&family=Satisfy&family=Updock&display=swap');
+
+body{
+  background:url(../public//wall.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+
+/* Weather */
+
+
+.Weather{
+  flex: 2;
+  margin: 25px;
+}
+.Weather form{
+  padding: 50px;
+  border-radius: 12px;
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  align-items: center;
+}
+.Weather form h1{
+  background: linear-gradient(blue,orange,white,transparent);
+  -webkit-background-clip: text;
+  font-size: 60px;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Architects Daughter', cursive;
+}
+.Weather form span{
+  font-size: 100px;
+  
+}
+
+.Weather form input{
+  padding: 12px 50px;
+  margin: 12px;
+  font-size: 25px;
+  border-radius: 12px;
+  background: transparent;
+  box-shadow: none !important;
+  color: white;
+}
+
+
+.Weather button{
+  padding: 10px 34px;
+  margin: 12px;
+  border-radius: 12px;
+  font-size: 20px;
+  color:white;
+  border: none;
+  background: transparent;
+}
+
+
+
+/* Data */
+
+
+.Data{
+  flex: 1;
+  background-color: rgba(15, 15, 12, 0.2);
+  backdrop-filter:blur(5px);
+  height: 90vh;
+  width: 800px;
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 25px;
+}
+
+
+/* Boxes */
+
+.Box{
+  background-color: rgba(20, 20, 16, 0.2);
+  backdrop-filter: blur(1px);
+  padding: 12px;
+  margin: 12px;
+  flex: 1;
+  flex-basis: 44%;
+  border-radius: 12px;
+  transition: all 1s;
+  cursor: pointer;
+}
+.Box:hover{
+  background-color: black;
+}
+
+
+.right{
+  font-size: 25px;
+  color: rgb(255, 255, 255,0.8);
+  border-radius: 25px;
+}
+
+.last-box{
+  background-color: rgba(36, 36, 30, 0.2);
+  backdrop-filter:blur(25px);
+  border-radius: 12px;
+  flex: 2;
+
+}
+
+.Region{
+  font-family: 'Oleo Script', cursive;
+
+}
+
+#footer{
+  font-family: 'Oleo Script', cursive;
+  color:grey;
+  font-size: 20px;
+}
