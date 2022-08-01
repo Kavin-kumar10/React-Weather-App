@@ -1,12 +1,13 @@
 import React from 'react'
+import axios from 'axios';
 
 const Weather = ({weather,city,setCity,setWeather}) =>{
-    console.log(process.env);
     const onSubmit = (e)=> {
         e.preventDefault()
-        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${process.env.REACT_APP_API_KEY}`)
-      .then(Response=>Response.json())
-      .then(data=>setWeather({
+        axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${process.env.REACT_APP_API_KEY}`)
+      .then(data=>{
+        data = data.data
+        setWeather({
           name:data.name,
           temp:data.main.temp,
           humidity:data.main.humidity,
@@ -16,7 +17,7 @@ const Weather = ({weather,city,setCity,setWeather}) =>{
           temp_min:data.main.temp_min,
           temp_max:data.main.temp_max,
           wind:data.wind.speed
-      }))
+      })})
     }
 
     return(
