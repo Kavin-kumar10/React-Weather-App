@@ -4,7 +4,7 @@ import axios from 'axios';
 const Weather = ({weather,city,setCity,setWeather}) =>{
     const onSubmit = (e)=> {
         e.preventDefault()
-        axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${process.env.REACT_APP_API_KEY}`)
+        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${process.env.REACT_APP_API_KEY}`)
       .then(data=>{
         data = data.data
         setWeather({
