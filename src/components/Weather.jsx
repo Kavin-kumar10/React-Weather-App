@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from 'react'
+import React from 'react'
 
 const Weather = ({weather,city,setCity,setWeather}) =>{
     console.log(process.env);
@@ -15,7 +15,6 @@ const Weather = ({weather,city,setCity,setWeather}) =>{
           pressure:data.main.pressure,
           temp_min:data.main.temp_min,
           temp_max:data.main.temp_max,
-          humidity:data.main.humidity,
           wind:data.wind.speed
       }))
     }

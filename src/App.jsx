@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState} from 'react';
 import Weather from './components/Weather'
 import Data from './components/Data'
 import Region from './components/Region';
@@ -39,17 +39,3 @@ function App() {
 
 export default App;
 
-
-
-
-  // const [val,setVal] = useState({})
-  // const [page,setPage] = useState("todos")
-  // // useEffect(()=>{
-  // //   fetch(`https://jsonplaceholder.typicode.com/${page}`)
-  // //     .then(response => response.json())
-  // //     .then(json=>setVal(json))
-  // // },[page])
-
-{/* <button onClick={()=>setPage("comments")}>Comments</button>
-<button onClick={()=>setPage("albums")}>Album</button>
-{JSON.stringify(val)} */}

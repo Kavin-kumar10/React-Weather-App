@@ -1,7 +1,6 @@
-import React,{useState, useEffect} from 'react'
+import React from 'react'
 import Box from './Box'
 import '../App.css'
-import Weather from './Weather'
 
 
 const Data = ({weather}) =>{
@@ -17,7 +16,7 @@ const Data = ({weather}) =>{
     return(
         <div className="Data">
           <div className="Box">
-                <img src={`${image}.png`} width={"300px"} />
+                <img src={`${image}.png`} width={"300px"} alt="climate"/>
                 <h1 style={{color:"white",fontSize:"50px"}}>{image}</h1>
           </div> 
          <Box value = {weather.temp} />   
